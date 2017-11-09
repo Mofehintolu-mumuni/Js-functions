@@ -1,10 +1,28 @@
 <html>
 <head>
 <title>Test run</title>
-
+<script>
+ function show_lga(){
+                            //check set_lga.js code for more details
+                            //declare state element id as var state_id
+                            var state_id = "state_value";
+                            
+                            var statevalue = get_state_value(state_id);
+                            
+                          //declare lga element id as var lga_element_id
+                            var lga_element_id = "write_lga";
+                            
+                            //GET LGA MAIN FUNCTION
+                            get_lga(statevalue,lga_element_id);
+                            
+                          
+                        }
+ 
+ 		
+</script>
 </head>
 <body>
-<select id="state_value" name="preferred_state" required="required">
+<select id="state_value" name="preferred_state" required="required" onchange="show_lga()">
 <option  value="" selected>Select preffered State</option>
 <option value="Abia_state">Abia state</option>
 <option value="Abuja_fct">Abuja Fct</option>
